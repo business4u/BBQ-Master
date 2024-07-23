@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #800000;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out items between the left and right sides */
+}
+
+.menu-icon {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+}
+
+.logo img {
+    height: 50px;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60px; /* Adjusted to be below the header */
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu ul li:hover {
+    background-color: #adb8fe;
+}
+
+#hero {
+    text-align: center;
+    background-color: #800000;
+    color: #fff;
+    padding: 50px 20px;
+    margin-top: 60px; /* Adjusted to compensate for the fixed header */
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    background-color: #ffd700;
+    color: #800000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#about, #menu, #contact {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #800000;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.menu-item img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Circular crop */
+    margin-right: 20px;
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
+.menu-details {
+    flex: 1;
+}
+
+.menu-item h3 {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #800000;
+    color: #fff;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Adjust as needed */
+    height: 60px; /* Adjust as needed */
+    background-color: #25D366; /* WhatsApp green */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-icon img {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+}
+
+.whatsapp-icon:hover {
+    background-color: #128C7E; /* Darker green on hover */
+}
